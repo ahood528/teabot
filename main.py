@@ -11,8 +11,6 @@ maps_to_parse = ['map1.svg']
 simulation_loops = 10
 
 # variables
-teabot_moves = 0
-teas_served = 0
 
 # parse command line arguments and
 # override hard-coded values
@@ -51,5 +49,5 @@ for i in range(simulation_loops) :
     print('sim loop', i)
 
 # print stats
-print("teas served:", teas_served)
-print("teabot distance:", teabot_moves)
+print("teas served:", teabot.Teabot.teas_served)
+print("teabot distance:", teabot.Teabot.teabot_moves)
